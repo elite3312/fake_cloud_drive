@@ -504,7 +504,7 @@ export default defineComponent({
       id_of_user_or_group_to_delete: '', //used for deleting rows
       current_row_focus_index: -1,
       row_state, //enum for 2 states that a row can be in
-      debug_flag: true,
+      debug_flag: false,
       confirm_delete: ref(false), //v model to control delete confirmation dialogue
       add_prompt: ref(false), //v model to control add dialogue
       user_or_group_already_included: false, //v model to control a waring message in add dialogue

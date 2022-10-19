@@ -84,7 +84,7 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
-      port: 8080,
+      port: 8081,
       open: true // opens browser window automatically
     },
 
@@ -103,7 +103,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
       all: 'auto',
       // Quasar plugins
-      plugins: ['Loading','Meta'],
+      plugins: ['Loading', 'Meta'],
     },
 
     // animations: 'all', // --- includes all animations
@@ -118,10 +118,10 @@ module.exports = configure(function (ctx) {
       // manualPostHydrationTrigger: true,
 
       prodPort: 3000, // The default port that the production server should use
-                      // (gets superseded if process.env.PORT is specified at runtime)
+      // (gets superseded if process.env.PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
-        // Tell browser when a file from the server should expire from cache (in ms)
+      // Tell browser when a file from the server should expire from cache (in ms)
 
       chainWebpackWebserver (/* chain */) {
         //
