@@ -26,3 +26,4 @@ npx quasar build
 ### see the configurations
 
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+### dummy change
