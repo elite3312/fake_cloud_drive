@@ -1,7 +1,8 @@
 # jenkins_test_project
-Test project for jenkins 
-## build instructions
 
+Test project for jenkins in a 2022 NCU course.
+
+## build instructions
 
 ```bash
 ## requires node >= 12.22.1
@@ -23,7 +24,9 @@ npx quasar dev
 npx quasar build
 ```
 
-### see the configurations
+## build using docker
 
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
-### dummy change
+```shell
+docker build -t my-quasar-vue-app .
+docker run -p 8080:80 my-quasar-vue-app # there is currently an issue with quasar build    
+```
