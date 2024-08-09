@@ -1,4 +1,4 @@
-# Use Node.js 16.x as the base image
+# Use Node.js 14.x as the base image
 FROM node:14 AS build-stage
 
 # Set the working directory

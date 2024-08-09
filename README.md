@@ -30,3 +30,5 @@ npx quasar build
 docker build -t my-quasar-vue-app .
 docker run -p 8080:80 my-quasar-vue-app # there is currently an issue with quasar build    
 ```
+
+Your Quasar-built Vue.js app should now be accessible at <http://localhost:8080>.
