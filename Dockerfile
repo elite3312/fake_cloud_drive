@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install Quasar CLI globally
-RUN npm install -g @quasar/cli@1.2.1
+RUN npm install -g @quasar/cli
 
 # Install dependencies
 RUN npm install
@@ -18,7 +18,7 @@ RUN npm install
 COPY . .
 
 # Build the application using Quasar
-RUN quasar build
+RUN npx quasar build
 
 # Serve the application using Nginx
 FROM nginx:alpine AS production-stage
